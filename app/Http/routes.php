@@ -12,5 +12,13 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+	return view('welcome');
 });
+
+
+
+Route::get('icopor', [
+	'middleware' => 'web',
+	'as'   => 'icopor', 
+	'uses' => 'PaginasController@VerIcopor'
+	]);

@@ -385,7 +385,7 @@ h1.logo img {
   position: absolute;
   left: 0;
   top: 0;
-  color: #2f7ddb;
+  color: #2e503e;
 }
 /* ====== Nav ======= */
 .navbar-header {
@@ -438,7 +438,7 @@ h1.logo img {
 }
 /* ======= Footer ======= */
 .footer {
-  background: #113560;
+  background: #3C6650;
   color: rgba(255, 255, 255, 0.7);
   font-size: 14px;
 }
@@ -508,7 +508,7 @@ h1.logo img {
   padding-top: 60px;
 }
 .bottombar {
-  background: #0d294b;
+  background: #253c30;
   padding-top: 15px;
   padding-bottom: 15px;
   color: rgba(255, 255, 255, 0.4);
@@ -620,7 +620,7 @@ h1.logo img {
 .services-section .custom-icon {
   margin-bottom: 15px;
   display: inline-block;
-  color: #2f7ddb;
+  color: #2e503e;
   font-size: 68px;
 }
 .services-section .cta-area {
@@ -666,7 +666,7 @@ h1.logo img {
 }
 /* ======= Reviews Section ======= */
 .reviews-section {
-  background: #1c59a2;
+  background: #3c6650;
   color: #fff;
 }
 .reviews-section .rating {
@@ -947,7 +947,7 @@ h1.logo img {
 }
 /* ======= Contact Section ======= */
 .contact-section {
-  background: #2f7ddb;
+  background: #3c6650;
   color: #fff;
   padding-top: 90px;
   padding-bottom: 90px;
