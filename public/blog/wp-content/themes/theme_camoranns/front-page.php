@@ -5,20 +5,19 @@
 
 <head>
     <title>MACROPOR Blog</title>
-    <!-- Meta -->
-    <meta charset="utf-8">
+<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">    
+    <meta name="description" content="Tradokey Blog">
+    <meta name="author" content="Tradokey">    
     <link rel="shortcut icon" href="favicon.ico">  
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic,700,700italic,900,900italic,300italic,300' rel='stylesheet' type='text/css'> 
     <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300,100' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,400italic,700,900,900italic,700italic' rel='stylesheet' type='text/css'>
     <!-- Global CSS -->
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/plugins/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/plugins/font-awesome/css/font-awesome.css">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/plugins/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/plugins/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/custom-icons/style.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/plugins/flexslider/flexslider.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/styles.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/main.css">
@@ -33,7 +32,53 @@
 
   <body class="features-page">    
    <!-- ******HEADER****** --> 
-
+  <!-- ******HEADER****** --> 
+                <header id="header" class="header">  
+                    <div id="topbar" class="topbar">
+                        <div class="container-fluid">
+                            <nav class="main-nav" role="navigation">
+                                <div class="navbar-header text-center">
+                                    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-collapse">
+                                        <span class="icon-bar-wrapper">
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                        </span><!--//icon-bar-wrapper-->
+                                    </button><!--//nav-toggle-->
+                                </div><!--//navbar-header-->
+                                <div id="navbar-collapse" class="navbar-collapse collapse text-center">
+                                    <ul class="nav navbar-nav center-block">
+                                        <li class="nav-item active"><a  href="../">Regresar al Inicio</a></li>
+                                       
+                                    </ul><!--//nav-->
+                                </div><!--//navabr-collapse-->
+                            </nav><!--//main-nav-->
+                            <div class="social-container">
+                                <ul class="list-inline social-list">
+                                    <li class="social-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li class="social-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li class="social-item"><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                    <li class="social-item"><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                </ul><!--//social-list-->
+                            </div><!--//social-container-->
+                        </div><!--//container-->
+                    </div><!--//topbar-->
+                    <div class="branding container">    
+                        <h1 class="logo pull-left"><img id="logo-image" class="logo-image" src="wp-content/themes/theme_camoranns/assets/images/logotipo_icopor.png" alt=""></h1> 
+                        <ul class="header-info-list list-inline pull-right">
+                            <li class="info-item contact-methods">
+                                <span class="custom-icon icon-telephone_signal"></span>
+                                <span class="info-main phone-number"><a href="#">(+57)2694134 </a></span>
+                                <span class="info-sub"><a href="#">info@macropor.com</a></span>
+                            </li><!--//info-item-->
+                            <li class="info-item business-hours">
+                                <span class="custom-icon icon-clock"></span>
+                                <span class="info-main phone-number">8am - 6pm</span>
+                                <span class="info-sub">Lunes - Sabado</span>
+                            </li><!--//info-item-->
+                        </ul><!--//info-list-->
+                    </div><!--//branding-->
+                </header><!--//header-->
 
   
 

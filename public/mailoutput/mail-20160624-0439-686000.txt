@@ -1,0 +1,25 @@
+To: camoranns@gmail.com
+Subject: Nuevo sitio de WordPress
+Date: Fri, 24 Jun 2016 04:39:27 +0000
+From: WordPress <wordpress@localhost>
+Message-ID: <53f7f9570289a4f340607e00acf72fdb@localhost>
+X-Mailer: PHPMailer 5.2.14 (https://github.com/PHPMailer/PHPMailer)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+Tu nuevo sitio WordPress ha sido creado en:
+
+http://localhost:8080/blog
+
+Puedes acceder a tu cuenta de administrador con la siguiente información:
+
+Nombre de usuario: Admin Macropor
+Contraseña: La contraseña que has elegido durante la instalación.
+Accede desde aquí:  http://localhost:8080/blog/wp-login.php
+
+Esperamos que disfrutes de tu sitio. ¡Gracias!
+
+--El Equipo de WordPress
+https://wordpress.org/
+

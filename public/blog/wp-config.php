@@ -16,7 +16,7 @@
 
 // ** Ajustes de MySQL. Solicita estos datos a tu proveedor de alojamiento web. ** //
 /** El nombre de tu base de datos de WordPress */
-define('DB_NAME', 'macropor_blog');
+define('DB_NAME', 'blog_macropor');
 
 /** Tu nombre de usuario de MySQL */
 define('DB_USER', 'root');
@@ -42,14 +42,14 @@ define('DB_COLLATE', '');
  *
  * @since 2.6.0
  */
-define('AUTH_KEY', ';7D@<KmkH)fKxP[cLdoXD1Xu1Si4g^&rkAg&`Fef=Z!qY_VHgFAgm9@UUt>x<>L3');
-define('SECURE_AUTH_KEY', '[jr e`(ny3W6V`+<kDKw?vkq;5Azy5E;U*B~R~dM8 d;hd.aaKzl;L>@7WgzX)KS');
-define('LOGGED_IN_KEY', 'gwUHaUy=[630~o:C<{+^lzW5_bkC)dP1YcOIC89WQpKGe9u=;fm[g7S>BGOYu/)(');
-define('NONCE_KEY', 'c4]<5wNf+77fx?I$sRO5Uc)ygTKA8lEqC!kd*k6R8oG|vtv0Ew7:kXDJZPUhnZ(!');
-define('AUTH_SALT', '0mkSut+67M(K[U*j]H~x/7;%/`|0kuS/Y{h8?VGPZNe:nZGWZX?IcOb~:r+CU.On');
-define('SECURE_AUTH_SALT', 'RTK_HT[QO%^/w3c(r;s9:n :#mj|t[ssAnKQF$`Q}PrKs_zVvd}?x!D^^05/~e5+');
-define('LOGGED_IN_SALT', '= qGUat,tz(!H/RK8/&#MI%>E@}Y}_s.7Ho=dmG{On>r#+xyAL?.t-d6!^6Oow@(');
-define('NONCE_SALT', 'O?773K8Gf|g`~6l(l_Dyl2sZ4Cyu5KV.2[uwmdG =/r2=@lM!h1c5oed99<M#pco');
+define('AUTH_KEY', 'L_^S>DWlmOpcha%Hxe/QLk^R>8lyP/Z2c3#RN`vAh:jD8P:zZ0UkG!1:CZeA!;)|');
+define('SECURE_AUTH_KEY', 'j+}tWZAiC|Y;.satj@L^qsmPa^@x!%sI_OYGt{V5D]uV|vnBmtgrybU$/q.Q06M4');
+define('LOGGED_IN_KEY', 'f<|J_[G~`V9uYJ0L49gqyvsJ61)m$_/CvxZu`NsW9,SY#+y CJ(n[qHCk}+3E@HZ');
+define('NONCE_KEY', 'YE%n5AUt2M_}MI].^=03OC_9=s& HD)feeA|u|?CpvLo5WZ|8B^kWsnIg_+(CN20');
+define('AUTH_SALT', 'Z:V=Innx7Uy|Qu2wh4[A.nlj|;SBV^P%ug%_[g^y,{apc) -[mzZF5=` ;@5c%>k');
+define('SECURE_AUTH_SALT', 'qU[w2qbS1xk.a@#b]my{>tRJ&pIQqO!+-B@Zcq):JQY[aLTiD~$nr4sP!3$2;+W6');
+define('LOGGED_IN_SALT', '= *?4~}gsg,boj6N*XrnZ/DQ>5!QX3kzdmS<N$DYKmqM$>r#!4C-{qK(bYHuHd=b');
+define('NONCE_SALT', '&{m7kjGZ}-DrHC[M-iN8;#2=>)(p~%]n QyitkW#8$FZCY.dH(xR_>p2P5Ms+0!k');
 
 /**#@-*/
 
@@ -59,7 +59,7 @@ define('NONCE_SALT', 'O?773K8Gf|g`~6l(l_Dyl2sZ4Cyu5KV.2[uwmdG =/r2=@lM!h1c5oed99
  * Cambia el prefijo si deseas instalar multiples blogs en una sola base de datos.
  * Emplea solo números, letras y guión bajo.
  */
-$table_prefix  = 'mc_';
+$table_prefix  = 'wp_';
 
 
 /**

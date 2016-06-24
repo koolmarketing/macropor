@@ -5,7 +5,7 @@
 
 
 <head>
-    <title>Responsive website template for builders and tradesmen</title>
+    <title>Macropor</title>
 
     <!-- Meta -->
     <meta charset="utf-8">
@@ -92,9 +92,8 @@
                                         <li class="nav-item active"><a class="scrollto" href="#header">Inicio</a></li>
                                         <li class="nav-item"><a class="scrollto" href="#about">Quienes somos</a></li>     
                                         <li class="nav-item"><a class="scrollto" href="#projects">Servicios</a></li>
-
-                                        <li class="nav-item"><a class="scrollto" href="#faqs">Preguntas Frecuentes</a></li>
-                                        <li class="nav-item"><a class="scrollto" href="#">Blog</a></li>
+                                    
+                                        <li class="nav-item"><a href="{!! URL::to('/blog/') !!}">Blog</a></li>
                                         <li class="nav-item"><a class="scrollto" href="#contact">Contactos</a></li>
                                     </ul><!--//nav-->
                                 </div><!--//navabr-collapse-->
@@ -134,9 +133,9 @@
                         <ol class="carousel-indicators">
                             <li class="active" data-slide-to="0" data-target="#hero-carousel"></li>
                             <li data-slide-to="1" data-target="#hero-carousel"></li>
-                            <li data-slide-to="2" data-target="#hero-carousel"></li>
+                           {{--  <li data-slide-to="2" data-target="#hero-carousel"></li>
                             <li data-slide-to="3" data-target="#hero-carousel"></li>
-                            <li data-slide-to="4" data-target="#hero-carousel"></li>
+                            <li data-slide-to="4" data-target="#hero-carousel"></li> --}}
                         </ol>
 
                         <!-- Wrapper for slides -->
@@ -146,40 +145,31 @@
                                 <div class="item-content container text-center">
                                     <div class="item-content-inner">
 
-                                        <h2 class="heading">The Perfect Bootstrap Template
-                                            <br>for Builders and Tradesmen</h2>
-                                            <p class="intro">Effective one page website template  designed for small trade businesses.</p>
-                                            <a class="btn btn-primary btn-cta scrollto" href="#contact" target="_blank">Get a FREE Quote</a>
+                                        <h2 class="heading">Innovamos con Tecnología y Calidad
+                                            <br>Para Nuestros Clientes</h2>
+                                            <p class="intro">
+                                                Nuestro mayor interés es comprometernos <br>entregando calidad y buen servicio.
+                                            </p>
+                                            
+                                            <a class="btn btn-primary btn-cta scrollto" href="#about" target="_blank">Conózcanos</a>
 
                                         </div><!--//item-content-inner-->
                                     </div><!--//item-content-->
-                                </div><!--//item-->
-
-                                <div class="item item-2">
-                                    <div class="item-content container text-center">
-                                        <div class="item-content-inner">
-
-                                            <h2 class="heading">UX Centred Design with SEO Friendly Code</h2>
-                                            <p class="intro">There is no need to start from scratch - we've got you covered.<br> Get this template and start building sites for all types of trade businesses.</p>
-                                            <a class="btn btn-primary btn-cta scrollto" href="#projects" target="_blank">View Our Projects</a>
-
-                                        </div><!--//item-content-inner-->
-                                    </div>
                                 </div><!--//item-->
 
                                 <div class="item item-3">
                                     <div class="item-content container text-center">
                                         <div class="item-content-inner">
 
-                                            <h2 class="heading">Working Contact Form Included</h2>
-                                            <p class="intro">This template comes with a working PHP contact form. <br>All you need to do is change the email address in the mailer.php file.</p>
-                                            <a class="btn btn-primary btn-cta scrollto" href="#contact" target="_blank">Try it now</a>
+                                            <h2 class="heading">Nuestro equipo está muy atento a colaborar activamente en sus requerimientos.</h2>
+                                            <p class="intro">Contamos con un equipo muy profesional para atender <br>todas las inquietudes que usted pueda tener.</p>
+                                            <a class="btn btn-primary btn-cta scrollto" href="#contact" target="_blank">Contáctenos</a>
 
                                         </div><!--//item-content-inner-->
                                     </div>
                                 </div><!--//item-->
 
-                                <div class="item item-4">
+                                {{-- <div class="item item-4">
                                     <div class="item-content container text-center">
                                         <div class="item-content-inner">
 
@@ -187,9 +177,9 @@
                                             <p class="intro">This template also includes a set of useful construction icon fonts. <br>You can easily pick the ones right for your site.</p>
                                             <a class="btn btn-primary btn-cta" href="#" target="_blank">Buy Now</a>
 
-                                        </div><!--//item-content-inner-->
+                                        </div>
                                     </div>
-                                </div><!--//item-->
+                                </div>
 
                                 <div class="item item-5">
                                     <div class="item-content container text-center">
@@ -199,9 +189,9 @@
                                             <p class="intro">We've laid the foundations for you so you can easily make successful sites for builders, plumbers, electricians, carpenters and many more.</p>
                                             <a class="btn btn-primary btn-cta" href="#" target="_blank">Buy Now</a>
 
-                                        </div><!--//item-content-inner-->
+                                        </div>
                                     </div>
-                                </div><!--//item-->
+                                </div> --}}
 
                             </div><!--//carousel-inner-->
 
@@ -240,34 +230,34 @@
                                         </div><!--//item-desc-->
                                     </div><!--//item-inner-->
                                 </div><!--//item-->
-                                <div class="item col-md-4 col-sm-6 col-xs-12">
+                                {{-- <div class="item col-md-4 col-sm-6 col-xs-12">
                                     <div class="item-inner">
                                         <span class="custom-icon icon-digger"></span>
                                         <h3 class="item-title">Extension</h3>
                                         <div class="item-desc">
                                             <p>There are 50+ construction icon fonts included in this template. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
-                                        </div><!--//item-desc-->
-                                    </div><!--//item-inner-->
-                                </div><!--//item-->
-                                <div class="item col-md-4 col-sm-6 col-xs-12">
+                                        </div>
+                                    </div>
+                                </div> --}} 
+                               {{--    <div class="item col-md-4 col-sm-6 col-xs-12">
                                     <div class="item-inner">
                                         <span class="custom-icon icon-ladder"></span>
                                         <h3 class="item-title">Roofing</h3>
                                         <div class="item-desc">
                                             <p>There are 50+ construction icon fonts included in this template. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
-                                        </div><!--//item-desc-->
-                                    </div><!--//item-inner-->
-                                </div><!--//item-->
-                                <div class="item col-md-4 col-sm-6 col-xs-12">
+                                        </div>
+                                    </div>
+                                </div> --}}
+                             {{--    <div class="item col-md-4 col-sm-6 col-xs-12">
                                     <div class="item-inner">
                                         <span class="custom-icon icon-ruler_pencil"></span>
                                         <h3 class="item-title">Loft Conversion</h3>
                                         <div class="item-desc">
                                             <p>There are 50+ construction icon fonts included in this template. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
-                                        </div><!--//item-desc-->
-                                    </div><!--//item-inner-->
-                                </div><!--//item-->
-                            </div><!--//row-->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> --}}
 
                             <div class="cta-area">
                                 <ul class="list-inline">
@@ -288,7 +278,7 @@
                                     <div class="inner">
                                         <blockquote class="quote">
                                             <i class="fa fa-quote-left" aria-hidden="true"></i>
-                                            <p>Excellent workmanship. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes aenean vulputate.</p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est rem dolorum voluptatibus, doloremque eum temporibus reiciendis doloribus expedita vel beatae accusamus.</p>
                                         </blockquote>
                                         <div class="rating">
                                             <i class="fa fa-star" aria-hidden="true"></i>
@@ -299,7 +289,7 @@
                                         </div><!--//rating-->
                                         <div class="source">
                                             <img class="customer-profile" src="assets/images/customers/customer-1.png" alt="">
-                                            <div class="customer-meta">Kevin, Bristol<br>via <a href="#">homeadvisor.com</a></div>
+                                            <div class="customer-meta">Techos & Soportes LTDA</div>
                                         </div><!--//source-->
                                     </div><!--inner-->
                                 </div><!--//item-->
@@ -318,7 +308,7 @@
                                         </div><!--//rating-->
                                         <div class="source">
                                             <img class="customer-profile" src="assets/images/customers/customer-2.png" alt="">
-                                            <div class="customer-meta">Kate, Bristol<br>via <a href="#">homeadvisor.com</a></div>
+                                            <div class="customer-meta">RAK & CIA Arquitectura</div>
                                         </div><!--//source-->
                                     </div><!--inner-->
                                 </div><!--//item-->
@@ -326,7 +316,7 @@
                                     <div class="inner">
                                         <blockquote class="quote">
                                             <i class="fa fa-quote-left" aria-hidden="true"></i>
-                                            <p>A thoroughly professional job lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.Phasellus viverra nulla ut metus varius laoreet.</p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est rem dolorum voluptatibus, doloremque eum temporibus reiciendis doloribus expedita vel beatae accusamus.</p>
                                         </blockquote>
                                         <div class="rating">
                                             <i class="fa fa-star" aria-hidden="true"></i>
@@ -337,7 +327,7 @@
                                         </div><!--//rating-->
                                         <div class="source">
                                             <img class="customer-profile" src="assets/images/customers/customer-3.png" alt="">
-                                            <div class="customer-meta">Sara, Bristol<br>via <a href="#">homeadvisor.com</a></div>
+                                            <div class="customer-meta">Construcciones del Valle</div>
                                         </div><!--//source-->
                                     </div><!--inner-->
                                 </div><!--//item-->
@@ -345,7 +335,7 @@
                                     <div class="inner">
                                         <blockquote class="quote">
                                             <i class="fa fa-quote-left" aria-hidden="true"></i>
-                                            <p>Very good plastering job! Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa natoque penatibus.</p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est rem dolorum voluptatibus, doloremque eum temporibus reiciendis doloribus expedita vel beatae accusamus.</p>
                                         </blockquote>
                                         <div class="rating">
                                             <i class="fa fa-star" aria-hidden="true"></i>
@@ -356,7 +346,7 @@
                                         </div><!--//rating-->
                                         <div class="source">
                                             <img class="customer-profile" src="assets/images/customers/customer-4.png" alt="">
-                                            <div class="customer-meta">Dan, Bristol<br>via <a href="#">homeadvisor.com</a></div>
+                                            <div class="customer-meta">Garces Arquitectos</div>
                                         </div><!--//source-->
                                     </div><!--inner-->
                                 </div><!--//item-->
@@ -364,7 +354,7 @@
                                     <div class="inner">
                                         <blockquote class="quote">
                                             <i class="fa fa-quote-left" aria-hidden="true"></i>
-                                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes</p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est rem dolorum voluptatibus, doloremque eum temporibus reiciendis doloribus expedita vel beatae accusamus.</p>
                                         </blockquote>
                                         <div class="rating">
                                             <i class="fa fa-star" aria-hidden="true"></i>
@@ -375,7 +365,7 @@
                                         </div><!--//rating-->
                                         <div class="source">
                                             <img class="customer-profile" src="assets/images/customers/customer-5.png" alt="">
-                                            <div class="customer-meta">Kelly, Bristol<br>via <a href="#">mybuilder.com</a></div>
+                                            <div class="customer-meta">Margarita Vargas</div>
                                         </div><!--//source-->
                                     </div><!--inner-->
                                 </div><!--//item-->
@@ -383,7 +373,7 @@
                                     <div class="inner">
                                         <blockquote class="quote">
                                             <i class="fa fa-quote-left" aria-hidden="true"></i>
-                                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes</p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est rem dolorum voluptatibus, doloremque eum temporibus reiciendis doloribus expedita vel beatae accusamus.</p>
                                         </blockquote>
                                         <div class="rating">
                                             <i class="fa fa-star" aria-hidden="true"></i>
@@ -394,7 +384,7 @@
                                         </div><!--//rating-->
                                         <div class="source">
                                             <img class="customer-profile" src="assets/images/customers/customer-6.png" alt="">
-                                            <div class="customer-meta">Johm, Bristol<br>via <a href="#">mybuilder.com</a></div>
+                                            <div class="customer-meta">Carlos Garcia, Bristol</div>
                                         </div><!--//source-->
                                     </div><!--inner-->
                                 </div><!--//item-->
@@ -438,36 +428,36 @@ Conservar los recursos naturales que se puedan ver afectados por el mal manejo d
                             <h2 class="section-title">¿Por qué elegirnos?</h2>
                             <div class="reasons center-block">
                                 <div class="item">
-                                    <h3 class="item-title"><i class="fa fa-check" aria-hidden="true"></i> We are “Home Advisor” screened and approved</h3>
-                                    <div class="item-desc">You can explain further here. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</div><!--//item-desc-->
+                                    <h3 class="item-title"><i class="fa fa-check" aria-hidden="true"></i> Somos pioneros en el diseño de soluciones de icopor en la region</h3>
+                                    <div class="item-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam voluptate qui, perspiciatis dolorum minus. </div><!--//item-desc-->
                                 </div><!--//item-->
                                 <div class="item">
-                                    <h3 class="item-title"><i class="fa fa-check" aria-hidden="true"></i> 100% Customer satisfaction guaranteed</h3>
-                                    <div class="item-desc">You can explain further here. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</div><!--//item-desc-->
+                                    <h3 class="item-title"><i class="fa fa-check" aria-hidden="true"></i> Tenemos un 96% de satisfacción de todos nuestros clientes.</h3>
+                                    <div class="item-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam voluptate qui, perspiciatis dolorum minus.</div><!--//item-desc-->
                                 </div><!--//item-->
                                 <div class="item">
-                                    <h3 class="item-title"><i class="fa fa-check" aria-hidden="true"></i> Our prices are competitive</h3>
-                                    <div class="item-desc">You can explain further here. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</div><!--//item-desc-->
+                                    <h3 class="item-title"><i class="fa fa-check" aria-hidden="true"></i> Nuestro principal valor es la Responsabilidad</h3>
+                                    <div class="item-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam voluptate qui, perspiciatis dolorum minus.</div><!--//item-desc-->
                                 </div><!--//item-->
                                 <div class="item">
-                                    <h3 class="item-title"><i class="fa fa-check" aria-hidden="true"></i> We have 100% positive reviews</h3>
-                                    <div class="item-desc">You can explain further here. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</div><!--//item-desc-->
+                                    <h3 class="item-title"><i class="fa fa-check" aria-hidden="true"></i> Garantizamos la calidad de nuestros productos de principio a fin</h3>
+                                    <div class="item-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam voluptate qui, perspiciatis dolorum minus.</div><!--//item-desc-->
                                 </div><!--//item-->
                                 <div class="item">
-                                    <h3 class="item-title"><i class="fa fa-check" aria-hidden="true"></i> Free quotes and estimate</h3>
-                                    <div class="item-desc">You can explain further here. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</div><!--//item-desc-->
+                                    <h3 class="item-title"><i class="fa fa-check" aria-hidden="true"></i> Prestamos acompañamiento de soporte y asesoría integral</h3>
+                                    <div class="item-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam voluptate qui, perspiciatis dolorum minus.</div><!--//item-desc-->
                                 </div><!--//item-->
                             </div><!--//reasons-->
 
-                            <div class="badges container">
+                         {{--    <div class="badges container">
                                 <ul class="badges-list list-inline center-block">
                                     <li class="badge-item"><a href="#"><img class="img-responsive" src="assets/images/badges/badge-1.png" alt=""></a></li>
                                     <li class="badge-item"><a href="#"><img class="img-responsive"  src="assets/images/badges/badge-2.png" alt=""></a></li>
                                     <li class="badge-item"><a href="#"><img class="img-responsive"  src="assets/images/badges/badge-3.png" alt=""></a></li>
                                     <li class="badge-item"><a href="#"><img class="img-responsive"  src="assets/images/badges/badge-4.png" alt=""></a></li>
                                     <li class="badge-item"><a href="#"><img class="img-responsive"  src="assets/images/badges/badge-5.png" alt=""></a></li>
-                                </ul><!--//badges-list-->
-                            </div><!--//badges-->
+                                </ul>
+                            </div> --}}
                         </section><!--//why-section-->
 
 
@@ -478,7 +468,7 @@ Conservar los recursos naturales que se puedan ver afectados por el mal manejo d
                                 <div class="section-intro">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.<br>Image credit: <a href="https://www.flickr.com/photos/84063900@N02/" target="_blank">Holland And Green Architectural Design</a>, 
                                     <a href="https://www.flickr.com/photos/martin_thomas/" target="_blank">Martin Thomas</a> and <a href="https://www.flickr.com/photos/jeremylevinedesign/" target="_blank">Jeremy Levine</a></div>
                                     <div class="latest-projects">
-                                        <h3 class="sub-title">Latest Case Studies</h3>
+                                        {{-- <h3 class="sub-title">Latest Case Studies</h3> --}}
                                         <div class="row">
                                             <div class="item col-sm-4 col-xs-12">
                                                 <div class="item-inner">
@@ -488,7 +478,7 @@ Conservar los recursos naturales que se puedan ver afectados por el mal manejo d
                                                             <div class="mask-inner">
                                                                 <h4 class="title">El E.P.S (Icopor) </h4>
                                                                 <div class="desc">Project intro goes here lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor...</div>
-                                                                <a class="btn btn-secondary" href="#" data-toggle="modal" data-target="#project-modal-1">View Details</a>
+                                                                <a class="btn btn-secondary" href="#" data-toggle="modal" data-target="#project-modal-1">Conocer Más</a>
                                                                 <a class="link" href="#" data-toggle="modal" data-target="#project-modal-1"></a>
                                                             </div><!--//mask-inner-->
                                                         </div><!--//info-mask-->
@@ -503,7 +493,7 @@ Conservar los recursos naturales que se puedan ver afectados por el mal manejo d
                                                             <div class="mask-inner">
                                                                 <h4 class="title">Bovedillas y Casetones</h4>
                                                                 <div class="desc">Project intro goes here lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor...</div>
-                                                                <a class="btn btn-secondary" href="#" data-toggle="modal" data-target="#project-modal-2">View Details</a>
+                                                                <a class="btn btn-secondary" href="#" data-toggle="modal" data-target="#project-modal-2">Conocer Más</a>
                                                                 <a class="link" href="#" data-toggle="modal" data-target="#project-modal-2"></a>
                                                             </div><!--//mask-inner-->
                                                         </div><!--//info-mask-->
@@ -516,9 +506,9 @@ Conservar los recursos naturales que se puedan ver afectados por el mal manejo d
                                                         <div class="img-holder img-holder-3"></div>
                                                         <div class="info-mask">
                                                             <div class="mask-inner">
-                                                                <h4 class="title">Bathroom Installation</h4>
+                                                                <h4 class="title">Asesoría y Soporte Técnico</h4>
                                                                 <div class="desc">Project intro goes here lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor...</div>
-                                                                <a class="btn btn-secondary" href="#" data-toggle="modal" data-target="#project-modal-3">View Details</a>
+                                                                <a class="btn btn-secondary" href="#" data-toggle="modal" data-target="#project-modal-3">Conocer Más</a>
                                                                 <a class="link" href="#" data-toggle="modal" data-target="#project-modal-3"></a>
                                                             </div><!--//mask-inner-->
                                                         </div><!--//info-mask-->
@@ -533,8 +523,7 @@ Conservar los recursos naturales que se puedan ver afectados por el mal manejo d
                                         <div id="photos-wrapper" class="photos-wrapper row">
                                             <div class="item col-md-2 col-sm-3 col-xs-4"><a href="assets/images/projects/gallery/gallery-1.jpg" data-gallery><img class="img-responsive" src="assets/images/projects/gallery/gallery-1-thumb.jpg" alt="" /></a></div>
                                             <div class="item col-md-2 col-sm-3 col-xs-4"><a href="assets/images/projects/gallery/gallery-2.jpg" data-gallery><img class="img-responsive" src="assets/images/projects/gallery/gallery-2-thumb.jpg" alt="" /></a></div>
-                                            <div class="item col-md-2 col-sm-3 col-xs-4"><a href="assets/images/projects/gallery/gallery-3.jpg" data-gallery><img class="img-responsive" src="assets/images/projects/gallery/gallery-3-thumb.jpg" alt="" /></a></div>
-                                            <div class="item col-md-2 col-sm-3 col-xs-4"><a href="assets/images/projects/gallery/gallery-4.jpg" data-gallery><img class="img-responsive" src="assets/images/projects/gallery/gallery-4-thumb.jpg" alt="" /></a></div>
+                                            <div class="item col-md-2 col-sm-3 col-xs-4"><a href="assets/images/projects/gallery/gallery-3.jpg" data-gallery><img class="img-responsive" src="assets/images/projects/gallery/gallery-3-thumb.jpg" alt="" /></a></div>                                            
                                             <div class="item col-md-2 col-sm-3 col-xs-4"><a href="assets/images/projects/gallery/gallery-5.jpg" data-gallery><img class="img-responsive" src="assets/images/projects/gallery/gallery-5-thumb.jpg" alt="" /></a></div>
                                             <div class="item col-md-2 col-sm-3 col-xs-4"><a href="assets/images/projects/gallery/gallery-6.jpg" data-gallery><img class="img-responsive" src="assets/images/projects/gallery/gallery-6-thumb.jpg" alt="" /></a></div>
                                             <div class="item col-md-2 col-sm-3 col-xs-4"><a href="assets/images/projects/gallery/gallery-7.jpg" data-gallery><img class="img-responsive" src="assets/images/projects/gallery/gallery-7-thumb.jpg" alt="" /></a></div>
@@ -564,7 +553,7 @@ Conservar los recursos naturales que se puedan ver afectados por el mal manejo d
                                 <div class="container">
                                     <h2 class="section-title">Contáctenos</h2>
                                     <div class="contact-intro">
-                                        <p>Working PHP contact form included below to save you time. All you need to do is change the email address in the mailer.php file. Lorem ipsum dolor sit amet, consectetuer adipiscing elit commodo ligula eget.</p>
+                                        <p>Le invitamos a que si presenta cualquier inquietud no dude en comunicarse con nosotros, tenemos distintos medios de comunicación.</p>
                                     </div>
                                     <ul class="contact-info-list list-inline">
                                         <li class="item">
@@ -662,7 +651,7 @@ Conservar los recursos naturales que se puedan ver afectados por el mal manejo d
                                             </div><!--//footer-col-->
                                             <div class="footer-col follow-us-col col-md-4 col-xs-12">
                                                 <h3 class="col-title">Síguenos</h3>
-                                                <div class="intro">Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero.</div>
+                                                <div class="intro">Síguenos en nuestras redes y entérate de nuestro excelente trabajo.</div>
                                                 <div class="social-container">
                                                     <ul class="list-inline social-list">
                                                         <li class="social-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -696,7 +685,7 @@ Conservar los recursos naturales que se puedan ver afectados por el mal manejo d
                                         <div class="modal-content">
                                             <div class="modal-header">
                                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                                <h4 class="modal-title text-center" id="projectModal1Label">Kitchen Extension</h4>
+                                                <h4 class="modal-title text-center" id="projectModal1Label">Icopor</h4>
                                             </div><!--//modal-header-->
                                             <div class="modal-body">
                                                 <div class="content">
@@ -741,7 +730,7 @@ Conservar los recursos naturales que se puedan ver afectados por el mal manejo d
                                         <div class="modal-content">
                                             <div class="modal-header">
                                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                                <h4 class="modal-title text-center" id="projectModal2Label">Loft Conversion</h4>
+                                                <h4 class="modal-title text-center" id="projectModal2Label">Bovedillas y Casetones</h4>
                                             </div><!--//modal-header-->
                                             <div class="modal-body">
                                                 <div class="content">
@@ -785,7 +774,7 @@ Conservar los recursos naturales que se puedan ver afectados por el mal manejo d
                                         <div class="modal-content">
                                             <div class="modal-header">
                                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                                <h4 class="modal-title text-center" id="projectModal3Label">Bathroom Installation</h4>
+                                                <h4 class="modal-title text-center" id="projectModal3Label">Asesoría y Soporte Técnico</h4>
                                             </div><!--//modal-header-->
                                             <div class="modal-body">
                                                 <div class="content">

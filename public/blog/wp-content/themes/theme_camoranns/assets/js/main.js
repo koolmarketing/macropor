@@ -13,7 +13,7 @@ $(document).ready(function() {
              $('#header').addClass('scrolled');
          }
          else {
-             $('#header').removeClass('scrolled');
+            $('#header').addClass('scrolled');
              
          }
     });

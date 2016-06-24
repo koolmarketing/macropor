@@ -17,10 +17,10 @@
 .crms-title {
   font-family: 'Lora','PT Sans Narrow', sans-serif;
   font-size: 55px;
-  color: #ffffff;
+  color: #444444;
   margin-bottom: 60px;
   padding-bottom: 15px;
-  text-shadow: 2px 1px 5px #222222;
+  /*text-shadow: 2px 1px 5px #222222;*/
   font-weight: 200; }
 
 .title-blog {

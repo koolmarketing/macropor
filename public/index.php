@@ -37,6 +37,18 @@ $app = require_once __DIR__.'/../bootstrap/app.php';
 
 /*
 |--------------------------------------------------------------------------
+| Wordpress
+|--------------------------------------------------------------------------
+|
+| Integrate Wordpress with Laravel core
+|
+*/
+
+define('WP_USE_THEMES', false);
+require __DIR__.'/blog/wp-blog-header.php';
+
+/*
+|--------------------------------------------------------------------------
 | Run The Application
 |--------------------------------------------------------------------------
 |
@@ -56,3 +68,4 @@ $response = $kernel->handle(
 $response->send();
 
 $kernel->terminate($request, $response);
+

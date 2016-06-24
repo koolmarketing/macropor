@@ -14,11 +14,11 @@
     <link rel="shortcut icon" href="favicon.ico">  
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic,700,700italic,900,900italic,300italic,300' rel='stylesheet' type='text/css'> 
     <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300,100' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,400italic,700,900,900italic,700italic' rel='stylesheet' type='text/css'>
     <!-- Global CSS -->
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/plugins/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/plugins/font-awesome/css/font-awesome.css">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/plugins/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/plugins/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/font-awesome/css/font-awesome.min.css">
+     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/custom-icons/style.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/plugins/flexslider/flexslider.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/styles.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/main.css">
@@ -59,7 +59,7 @@
                         </div><!--//container-->
                     </div><!--//topbar-->
                     <div class="branding container">    
-                        <h1 class="logo pull-left"><img id="logo-image" class="logo-image" src="assets/images/logotipo_icopor.png" alt=""></h1> 
+                        <h1 class="logo pull-left"><img id="logo-image" class="logo-image" src="wp-content/themes/theme_camoranns/assets/images/logotipo_icopor.png" alt=""></h1> 
                         <ul class="header-info-list list-inline pull-right">
                             <li class="info-item contact-methods">
                                 <span class="custom-icon icon-telephone_signal"></span>
@@ -172,7 +172,7 @@
                                     <div class="bottombar text-center">
 
 
-                                        <div class="copyright"><b>MACROPOR</b> Induyorjac S.A.S <a href="http://themes.3rdwavemedia.com/" target="_blank"> - Todos los derechos reservados</a></div>  
+                                        <div class="copyright"><b>MACROPOR</b> Induyorjac S.A.S - Todos los derechos reservados</div>  
 
                                     </div><!--//bottombar--> 
                                 </footer><!--//footer-->
