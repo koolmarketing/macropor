@@ -22,3 +22,15 @@ Route::get('icopor', [
 	'as'   => 'icopor', 
 	'uses' => 'PaginasController@VerIcopor'
 	]);
+
+Route::get('bovedillas_casetones', [
+	'middleware' => 'web',
+	'as'   => 'icopor', 
+	'uses' => 'PaginasController@VerBovedillasCasetones'
+	]);
+
+Route::get('asesoria_soporte', [
+	'middleware' => 'web',
+	'as'   => 'icopor', 
+	'uses' => 'PaginasController@AsesoriaSoporte'
+	]);

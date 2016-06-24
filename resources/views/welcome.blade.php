@@ -73,57 +73,7 @@
 
             <body data-spy="scroll">     
 
-                <!-- ******HEADER****** --> 
-                <header id="header" class="header">  
-                    <div id="topbar" class="topbar">
-                        <div class="container-fluid">
-                            <nav class="main-nav" role="navigation">
-                                <div class="navbar-header text-center">
-                                    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-collapse">
-                                        <span class="icon-bar-wrapper">
-                                            <span class="icon-bar"></span>
-                                            <span class="icon-bar"></span>
-                                            <span class="icon-bar"></span>
-                                        </span><!--//icon-bar-wrapper-->
-                                    </button><!--//nav-toggle-->
-                                </div><!--//navbar-header-->
-                                <div id="navbar-collapse" class="navbar-collapse collapse text-center">
-                                    <ul class="nav navbar-nav center-block">
-                                        <li class="nav-item active"><a class="scrollto" href="#header">Inicio</a></li>
-                                        <li class="nav-item"><a class="scrollto" href="#about">Quienes somos</a></li>     
-                                        <li class="nav-item"><a class="scrollto" href="#projects">Servicios</a></li>
-                                    
-                                        <li class="nav-item"><a href="{!! URL::to('/blog/') !!}">Blog</a></li>
-                                        <li class="nav-item"><a class="scrollto" href="#contact">Contactos</a></li>
-                                    </ul><!--//nav-->
-                                </div><!--//navabr-collapse-->
-                            </nav><!--//main-nav-->
-                            <div class="social-container">
-                                <ul class="list-inline social-list">
-                                    <li class="social-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                    <li class="social-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                    <li class="social-item"><a href="#"><i class="fa fa-instagram"></i></a></li>
-                                    <li class="social-item"><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                                </ul><!--//social-list-->
-                            </div><!--//social-container-->
-                        </div><!--//container-->
-                    </div><!--//topbar-->
-                    <div class="branding container">    
-                        <h1 class="logo pull-left"><img id="logo-image" class="logo-image" src="assets/images/logotipo_icopor.png" alt=""></h1> 
-                        <ul class="header-info-list list-inline pull-right">
-                            <li class="info-item contact-methods">
-                                <span class="custom-icon icon-telephone_signal"></span>
-                                <span class="info-main phone-number"><a href="#">(+57)2694134 </a></span>
-                                <span class="info-sub"><a href="#">info@macropor.com</a></span>
-                            </li><!--//info-item-->
-                            <li class="info-item business-hours">
-                                <span class="custom-icon icon-clock"></span>
-                                <span class="info-main phone-number">8am - 6pm</span>
-                                <span class="info-sub">Lunes - Sabado</span>
-                            </li><!--//info-item-->
-                        </ul><!--//info-list-->
-                    </div><!--//branding-->
-                </header><!--//header-->
+                @include('templates.header')
 
                 <div id="promo" class="promo-section">
 
@@ -413,13 +363,13 @@
                                 <div class="col-md-6">
                                     <h4 class="section-title">Misión</h4>
                                     <p>Fabricar y comercializar  productos en E.P.S(Icopor).
-Satisfacer las necesidades y requerimientos de nuestros clientes de manera oportuna, permanente, con productos de calidad y precios competitivos.
-Conservar los recursos naturales que se puedan ver afectados por el mal manejo de los residuos sólidos en especial  el poliestireno, desarrollando así un programa de manejo seguro y disposición final adecuado, que incluye la reutilización y reciclaje de este material. 
-</p>
+                                        Satisfacer las necesidades y requerimientos de nuestros clientes de manera oportuna, permanente, con productos de calidad y precios competitivos.
+                                        Conservar los recursos naturales que se puedan ver afectados por el mal manejo de los residuos sólidos en especial  el poliestireno, desarrollando así un programa de manejo seguro y disposición final adecuado, que incluye la reutilización y reciclaje de este material. 
+                                    </p>
                                 </div> 
                                 <div class="col-md-6">
-<h4 class="section-title">Misión</h4>
-<p>Ser la compañía elegida para proveer productos en poliestireno expandible a nivel nacional, con base en la calidad de nuestros productos, el  cumplimiento y asesoría técnica,  el profesionalismo y calidad humana de nuestros colaboradores y la organización reflejada en nuestros procesos.</p>
+                                    <h4 class="section-title">Visión</h4>
+                                    <p>Ser la compañía elegida para proveer productos en poliestireno expandible a nivel nacional, con base en la calidad de nuestros productos, el  cumplimiento y asesoría técnica,  el profesionalismo y calidad humana de nuestros colaboradores y la organización reflejada en nuestros procesos.</p>
                                 </div> 
                             </div><!--//container-->
                         </section><!--//about-section-->
@@ -479,7 +429,7 @@ Conservar los recursos naturales que se puedan ver afectados por el mal manejo d
                                                                 <h4 class="title">El E.P.S (Icopor) </h4>
                                                                 <div class="desc">Project intro goes here lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor...</div>
                                                                 <a class="btn btn-secondary" href="#" data-toggle="modal" data-target="#project-modal-1">Conocer Más</a>
-                                                                <a class="link" href="#" data-toggle="modal" data-target="#project-modal-1"></a>
+                                                                <a class="link" href="{!! URL::to('/') !!}/icopor" ></a>
                                                             </div><!--//mask-inner-->
                                                         </div><!--//info-mask-->
                                                     </div><!--//project-item-->
@@ -494,7 +444,7 @@ Conservar los recursos naturales que se puedan ver afectados por el mal manejo d
                                                                 <h4 class="title">Bovedillas y Casetones</h4>
                                                                 <div class="desc">Project intro goes here lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor...</div>
                                                                 <a class="btn btn-secondary" href="#" data-toggle="modal" data-target="#project-modal-2">Conocer Más</a>
-                                                                <a class="link" href="#" data-toggle="modal" data-target="#project-modal-2"></a>
+                                                                <a class="link" href="{!! URL::to('/') !!}/bovedillas_casetones" ></a>
                                                             </div><!--//mask-inner-->
                                                         </div><!--//info-mask-->
                                                     </div><!--//project-item-->
@@ -692,31 +642,91 @@ Conservar los recursos naturales que se puedan ver afectados por el mal manejo d
                                                     <div class="row">
                                                         <figure class="figure col-xs-12 col-md-5">
                                                             <img class="img-responsive" src="assets/images/projects/latest/latest-1.jpg" alt="" />
+                                                            <br>
+ <div class="col-md-12 col-xs-12">
+<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingOne">
+      <h4 class="panel-title">
+        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          Construcción de carreteras
+        </a>
+      </h4>
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+      <div class="panel-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingTwo">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Collapsible Group Item #2
+        </a>
+      </h4>
+    </div>
+    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+      <div class="panel-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingThree">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Collapsible Group Item #3
+        </a>
+      </h4>
+    </div>
+    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+      <div class="panel-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+</div>
+                                                        </div>
+
+
                                                         </figure><!--//figure-->
+
+
+
                                                         <div class="details col-xs-12 col-md-7">
-                                                            <p>Describe your project here. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
-                                                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Describe your project here. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+                                                            <p>El E.P.S (icopor) es un material plástico celular de estireno que contiene un agente de expansión, presenta una estructura celular cerrada y rellena de aire, aproximadamente a un 98%. Tiene la capacidad de ser aislante térmico, acústico y por su bajo peso es utilizado en la construcción como material  aligerante.</p>
+                                                            <p><b>Transformación del E.P.S.:</b>  El poliestireno expandible se presenta en esferas que oscilan entre 0,2-3,0mm  y se pueden tratar con diferentes aditivos dando como resultado diferentes clasificaciones como son:</p>
+                                                            <br>
+                                                            <ul>
+                                                                <li><b>Tipo P:</b> poliestireno de uso general</li>
+                                                                <li><b>Tipo F:</b> poliestireno expandible auto extinguible</li>
+                                                                <li> <b>Tipo B:</b> poliestireno expandible grado alimenticio </li>
+                                                            </ul>                                                            
 
                                                         </div><!--//details-->
+                                                       
+
+
+                                                        <div class="col-md-7 col-xs-12">
+                                                            <p>         
+                                                                Estas esferas se transforman en tres etapas:
+                                                            </p>
+                                                            <ol>
+                                                                <li><b>Pre expansión:</b> En esta etapa las esferas se calientan mediante la inyección de vapor de agua a una temperatura de 80 a 110°C, provocando la dilatación del pentano y la pre expansión de las perlas.</li>
+                                                                <li><b>Reposo intermedio y estabilización:</b> En esta etapa las perlas se almacenan durante varias horas donde simultáneamente se estabilizan mecánicamente y liberan la humedad.</li>
+                                                                <li><b>Bloqueo:</b> Se transportan las perlas hacia la maquina bloquera sometiéndolas nuevamente al vapor de agua produciendo una segunda expansión y la unión de las perlas entre si para formar una estructura polihedrica que ocupa todo el espacio de la bloquera, de esta manera se obtienen bloques para después mecanizarlos, cortarlos y transformarlos en las diferentes formas deseadas. </li>
+                                                            </ul><br>
+                                                            <div class="alert alert-success">
+                                                                Macropor Induyorjac SAS, para dar cumplimiento con la norma de construcción NTC 1426 utiliza siempre productos de la serie F, en densidades mínimas de 10kg/m3 hasta 30kg/m3, según los requerimientos del cliente.
+                                                            </div>
+                                                        </div>
+
                                                     </div><!--//row-->
 
-                                                    <div class="review text-center">
-                                                        <blockquote class="quote">
-                                                            <i class="fa fa-quote-left" aria-hidden="true"></i>
-                                                            <p>A thoroughly professional job lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.Phasellus viverra nulla ut metus varius laoreet.</p>
-                                                        </blockquote>
-                                                        <div class="rating">
-                                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                                        </div><!--//rating-->
-                                                        <div class="source">
-                                                            <img class="customer-profile" src="assets/images/customers/customer-3.png" alt="">
-                                                            <div class="customer-meta">Sara, Bristol - via <a href="#">homeadvisor.com</a></div>
-                                                        </div><!--//source-->
-                                                    </div><!--//review-->
+                                                    
+                                    
 
                                                 </div>
                                             </div><!--//modal-body-->
