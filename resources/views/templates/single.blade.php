@@ -5,14 +5,31 @@
 
 
 <head>
-    <title>Responsive website template for builders and tradesmen</title>
+    <title>Macropor - Icopor Cali</title>
 
     <!-- Meta -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">    
+
+    <meta name="description" content="" />
+    <meta name="keywords" content="Icopor Cali, Casetón, Bevedillas, Cielo Raso, Placa Facil" />
+    <meta name="author" content="MACROPOR Induyorjac S.A.S" />
+    <meta name="copyright" content="MACROPOR Induyorjac S.A.S" />
+    <meta name="application-name" content="Macropor" />
+
+
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="article" />
+    <meta property="og:image" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:description" content="" />
+
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="" />
+    <meta name="twitter:description" content="" />
+    <meta name="twitter:image" content="" /> 
 
 
     <link rel="shortcut icon" href="favicon.ico">  
@@ -68,163 +85,159 @@
 
             <body data-spy="scroll">     
 
-            @include('templates.header')
-
-               
-
-                    <section id="services" class="section services-section text-center">
-                        <div class="container">
-                           
-                           @yield('contenido')
-                           
-                        </div><!--//container-->
-                    </section><!--//services-->                     
-
-
-                       
-
-
-                            <!-- ******FOOTER****** --> 
-                            <footer class="footer">
-                                <div class="footer-main container">
-                                    <div class="row">
-                                        <div class="footer-col business-hours-col col-md-4 col-sm-6 col-xs-12">
-                                            <h3 class="col-title">Horario de Atención</h3>
-                                            <div class="intro">Nuestros Horarios de oficina y de<br>respuesta inmediata.</div>
-                                            <ul class="business-hours-list list-unstyled">
-                                                <li><strong>Lunes - Viernes:</strong> 8am - 6pm</li>
-                                                <li><strong>Sabado:</strong> 8am - 4pm</li>
-                                                <li><strong>Domingo:</strong> 9am - 1pm</li>
-                                            </ul>
-                                        </div><!--//footer-col-->
-                                        <div class="footer-col contact-us-col col-md-4 col-sm-6 col-xs-12">
-                                            <h3 class="col-title">Información de Contacto</h3>
-                                            <ul class="footer-contact-list list-unstyled">
-                                                <li class="item">
-                                                    <span class="custom-icon icon-telephone_signal"></span>
-                                                    <span class="info"><a href="#">269 4134 </a></span>
-                                                </li>
-                                                <li class="item">
-                                                    <span class="custom-icon icon-mobile-phone"></span>
-                                                    <span class="info"><a href="#">320 6740586</a></span>
-                                                </li>
-                                                <li class="item">
-                                                    <span class="custom-icon icon-email"></span>
-                                                    <span class="info"><a href="#">info@macropor.com</a></span>
-                                                </li>    
-                                                <li class="item">
-                                                    <span class="custom-icon icon-map_pin"></span>
-                                                    <span class="info">
-
-
-                                                        <span class="street-address"><b>Ubicación</b></span><br>
-                                                        <span class="region">Calle 24 N0. 14-06</span><br>
-                                                        <span class="postal-code">Jamundi 
-                                                            Cali, Valle del Cauca   </span><br>
-                                                            <span class="country-name">Colombia</span>
-
-                                                        </span>
-                                                    </li>    
-                                                </ul>
-                                            </div><!--//footer-col-->
-                                            <div class="footer-col follow-us-col col-md-4 col-xs-12">
-                                                <h3 class="col-title">Síguenos</h3>
-                                                <div class="intro">Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero.</div>
-                                                <div class="social-container">
-                                                    <ul class="list-inline social-list">
-                                                        <li class="social-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                                        <li class="social-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                                        <li class="social-item"><a href="#"><i class="fa fa-instagram"></i></a></li>
-                                                        <li class="social-item"><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                                                    </ul><!--//social-list-->
-                                                </div><!--//social-container-->
-
-                                                <ul class="footer-menu list-unstyled">
-                                                    <li><a href="#">Terms &amp; Conditions</a></li>
-                                                    <li><a href="#">Privacy Policy</a></li>
-                                                </ul>
-                                            </div><!--//footer-col-->
-                                        </div><!--//row-->
+                @include('templates.header')
 
 
 
-                                    </div><!--//container-->
-                                    <div class="bottombar text-center">
+                <section id="services" class="section services-section text-center">
+                    <div class="container">
+
+                       @yield('contenido')
+
+                   </div><!--//container-->
+               </section><!--//services-->                     
 
 
-                                        <div class="copyright"><b>MACROPOR</b> Induyorjac s.a.s  - Todos los derechos reservados</div>  
 
-                                    </div><!--//bottombar--> 
-                                </footer><!--//footer-->
 
-                            
 
+               <!-- ******FOOTER****** --> 
+               <footer class="footer">
+                <div class="footer-main container">
+                    <div class="row">
+                        <div class="footer-col business-hours-col col-md-4 col-sm-6 col-xs-12">
+                            <h3 class="col-title">Horario de Atención</h3>
+                            <div class="intro">Nuestros Horarios de oficina y de<br>respuesta inmediata.</div>
+                            <ul class="business-hours-list list-unstyled">
+                                <li><strong>Lunes - Viernes:</strong> 8am - 6pm</li>
+                                <li><strong>Sabado:</strong> 8am - 4pm</li>
                                 
+                            </ul>
+                        </div><!--//footer-col-->
+                        <div class="footer-col contact-us-col col-md-4 col-sm-6 col-xs-12">
+                            <h3 class="col-title">Información de Contacto</h3>
+                            <ul class="footer-contact-list list-unstyled">
+                                <li class="item">
+                                    <span class="custom-icon icon-telephone_signal"></span>
+                                    <span class="info"><a href="#">269 4134 </a></span>
+                                </li>
+                                <li class="item">
+                                    <span class="custom-icon icon-mobile-phone"></span>
+                                    <span class="info"><a href="#">320 6740586</a></span>
+                                </li>
+                                <li class="item">
+                                    <span class="custom-icon icon-email"></span>
+                                    <span class="info"><a href="#">info@macropor.com</a></span>
+                                </li>    
+                                <li class="item">
+                                    <span class="custom-icon icon-map_pin"></span>
+                                    <span class="info">
 
 
-                                <!-- The Bootstrap Image Gallery lightbox -->
-                                <div id="blueimp-gallery" class="blueimp-gallery" data-use-bootstrap-modal="false">
-                                    <!-- The container for the modal slides -->
-                                    <div class="slides"></div>
-                                    <!-- Controls for the borderless lightbox -->
-                                    <h3 class="title"></h3>
-                                    <a class="prev">‹</a>
-                                    <a class="next">›</a>
-                                    <a class="close">×</a>
-                                    <a class="play-pause"></a>
-                                    <ol class="indicator"></ol>
-                                    <!-- The modal dialog, which will be used to wrap the lightbox content -->
-                                    <div class="modal fade" tabindex="-1" >
-                                        <div class="modal-dialog">
-                                            <div class="modal-content">
-                                                <div class="modal-header">
-                                                    <button type="button" class="close" aria-hidden="true">&times;</button>
-                                                    <h4 class="modal-title"></h4>
-                                                </div>
-                                                <div class="modal-body next"></div>
-                                                <div class="modal-footer">
-                                                    <button type="button" class="btn btn-default pull-left prev">
-                                                        <i class="glyphicon glyphicon-chevron-left"></i>
-                                                        Previous
-                                                    </button>
-                                                    <button type="button" class="btn btn-primary next">
-                                                        Next
-                                                        <i class="glyphicon glyphicon-chevron-right"></i>
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div><!--blueimp-gallery-->
+                                        <span class="street-address"><b>Ubicación</b></span><br>
+                                        <span class="region">Calle 24 N0. 14-06</span><br>
+                                        <span class="postal-code">Jamundi 
+                                            Cali, Valle del Cauca   </span><br>
+                                            <span class="country-name">Colombia</span>
 
-                                
+                                        </span>
+                                    </li>    
+                                </ul>
+                            </div><!--//footer-col-->
+                            <div class="footer-col follow-us-col col-md-4 col-xs-12">
+                                <h3 class="col-title">Síguenos</h3>
+                                <div class="intro">Síguenos en nuestras redes y entérate de nuestro excelente trabajo.</div>
+                                <div class="social-container">
+                                    <ul class="list-inline social-list">
+                                        <li class="social-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                        <li class="social-item"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                        <li class="social-item"><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                        <li class="social-item"><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                    </ul><!--//social-list-->
+                                </div><!--//social-container-->
 
-                                <!-- Main Javascript -->          
-                                <script type="text/javascript" src="assets/plugins/jquery-1.12.3.min.js"></script>
-                                <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
-                                <script type="text/javascript" src="assets/plugins/jquery-scrollTo/jquery.scrollTo.min.js"></script>  
-                                <script type="text/javascript" src="assets/plugins/jquery-match-height/jquery.matchHeight-min.js"></script>
-                                <script type="text/javascript" src="assets/plugins/jquery.validate.min.js"></script> 
-                                <script type="text/javascript" src="assets/plugins/jquery-inview/jquery.inview.min.js"></script>
-                                <script type="text/javascript" src="assets/plugins/isMobile/isMobile.min.js"></script>   
-                                <script type="text/javascript" src="assets/plugins/back-to-top.js"></script>
-                                <script type="text/javascript" src="assets/plugins/owl-carousel/owl.carousel.min.js"></script> 
-                                <script type="text/javascript" src="assets/plugins/Gallery/js/jquery.blueimp-gallery.min.js"></script>
-                                <script type="text/javascript" src="assets/plugins/Bootstrap-Image-Gallery/js/bootstrap-image-gallery.min.js"></script>
-                                <script type="text/javascript" src="assets/js/ajax-form.js"></script> 
-
-                                <script type="text/javascript" src="assets/js/main.js"></script> 
-
-                                <!--[if !IE]>-->
-                                <script type="text/javascript" src="assets/js/animations.js"></script> 
-                                <!--<![endif]--> 
-
-                                <!-- Style Switcher (REMOVE ON YOUR PRODUCTION SITE) -->
-                                <script src="assets/js/demo/style-switcher.js"></script>
+                            </div><!--//footer-col-->
+                        </div><!--//row-->
 
 
-                            </body>
+
+                    </div><!--//container-->
+                    <div class="bottombar text-center">
 
 
-                            </html> 
+                    <div class="copyright"><b>MACROPOR</b> Induyorjac S.A.S  - Todos los derechos reservados</div>  
+
+                    </div><!--//bottombar--> 
+                </footer><!--//footer-->
+
+
+
+
+
+
+                <!-- The Bootstrap Image Gallery lightbox -->
+                <div id="blueimp-gallery" class="blueimp-gallery" data-use-bootstrap-modal="false">
+                    <!-- The container for the modal slides -->
+                    <div class="slides"></div>
+                    <!-- Controls for the borderless lightbox -->
+                    <h3 class="title"></h3>
+                    <a class="prev">‹</a>
+                    <a class="next">›</a>
+                    <a class="close">×</a>
+                    <a class="play-pause"></a>
+                    <ol class="indicator"></ol>
+                    <!-- The modal dialog, which will be used to wrap the lightbox content -->
+                    <div class="modal fade" tabindex="-1" >
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" aria-hidden="true">&times;</button>
+                                    <h4 class="modal-title"></h4>
+                                </div>
+                                <div class="modal-body next"></div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default pull-left prev">
+                                        <i class="glyphicon glyphicon-chevron-left"></i>
+                                        Previous
+                                    </button>
+                                    <button type="button" class="btn btn-primary next">
+                                        Next
+                                        <i class="glyphicon glyphicon-chevron-right"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--blueimp-gallery-->
+
+
+
+                <!-- Main Javascript -->          
+                <script type="text/javascript" src="assets/plugins/jquery-1.12.3.min.js"></script>
+                <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+                <script type="text/javascript" src="assets/plugins/jquery-scrollTo/jquery.scrollTo.min.js"></script>  
+                <script type="text/javascript" src="assets/plugins/jquery-match-height/jquery.matchHeight-min.js"></script>
+                <script type="text/javascript" src="assets/plugins/jquery.validate.min.js"></script> 
+                <script type="text/javascript" src="assets/plugins/jquery-inview/jquery.inview.min.js"></script>
+                <script type="text/javascript" src="assets/plugins/isMobile/isMobile.min.js"></script>   
+                <script type="text/javascript" src="assets/plugins/back-to-top.js"></script>
+                <script type="text/javascript" src="assets/plugins/owl-carousel/owl.carousel.min.js"></script> 
+                <script type="text/javascript" src="assets/plugins/Gallery/js/jquery.blueimp-gallery.min.js"></script>
+                <script type="text/javascript" src="assets/plugins/Bootstrap-Image-Gallery/js/bootstrap-image-gallery.min.js"></script>
+                <script type="text/javascript" src="assets/js/ajax-form.js"></script> 
+
+                <script type="text/javascript" src="assets/js/main.js"></script> 
+
+                <!--[if !IE]>-->
+                <script type="text/javascript" src="assets/js/animations.js"></script> 
+                <!--<![endif]--> 
+
+                <!-- Style Switcher (REMOVE ON YOUR PRODUCTION SITE) -->
+                <script src="assets/js/demo/style-switcher.js"></script>
+
+
+            </body>
+
+
+            </html> 
 

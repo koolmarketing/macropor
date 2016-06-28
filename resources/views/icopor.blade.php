@@ -6,8 +6,8 @@
 <div class="row">
 
     <figure class="figure col-xs-12 col-md-5">
-        <img class="img-responsive" src="assets/images/projects/latest/latest-1.jpg" alt="" />
-        <br>
+        <img class="img-responsive img-thumbnail" src="assets/images/projects/latest/latest-1.jpg" alt="" />
+        <br><br>
         <div class="col-md-12 col-xs-12">
             <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
               <div class="panel panel-default">

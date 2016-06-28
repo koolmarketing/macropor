@@ -26,7 +26,7 @@
                             <div class="social-container">
                                 <ul class="list-inline social-list">
                                     <li class="social-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                    <li class="social-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li class="social-item"><a href="#"><i class="fa fa-linkedin"></i></a></li>
                                     <li class="social-item"><a href="#"><i class="fa fa-instagram"></i></a></li>
                                     <li class="social-item"><a href="#"><i class="fa fa-google-plus"></i></a></li>
                                 </ul><!--//social-list-->
