@@ -22,6 +22,34 @@
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/styles.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/main.css">
 
+     <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+              (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-80040237-1', 'auto');
+          ga('send', 'pageview');
+
+      </script>
+
+      <script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '299795150354648',
+      xfbml      : true,
+      version    : 'v2.6'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -56,7 +84,7 @@
                             <div class="social-container">
                                 <ul class="list-inline social-list">
                                     <li class="social-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                    <li class="social-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li class="social-item"><a href="#"><i class="fa fa-linkedin"></i></a></li>
                                     <li class="social-item"><a href="#"><i class="fa fa-instagram"></i></a></li>
                                     <li class="social-item"><a href="#"><i class="fa fa-google-plus"></i></a></li>
                                 </ul><!--//social-list-->
@@ -65,18 +93,12 @@
                     </div><!--//topbar-->
                     <div class="branding container">    
                         <h1 class="logo pull-left"><img id="logo-image" class="logo-image" src="wp-content/themes/theme_camoranns/assets/images/logotipo_icopor.png" alt=""></h1> 
-                        <ul class="header-info-list list-inline pull-right">
-                            <li class="info-item contact-methods">
-                                <span class="custom-icon icon-telephone_signal"></span>
-                                <span class="info-main phone-number"><a href="#">(+57)2694134 </a></span>
-                                <span class="info-sub"><a href="#">info@macropor.com</a></span>
-                            </li><!--//info-item-->
-                            <li class="info-item business-hours">
-                                <span class="custom-icon icon-clock"></span>
-                                <span class="info-main phone-number">8am - 6pm</span>
-                                <span class="info-sub">Lunes - Sabado</span>
-                            </li><!--//info-item-->
-                        </ul><!--//info-list-->
+                        <div class="help-box text-right">
+        
+                <h3>2694134 -  3206740586<img width="24px" class="alignright" src="/assets/images/icono_wp.png" alt=""><br> 3152532734</h3><br>
+                <h4>info@macropor.com</h4>
+
+            </div>
                     </div><!--//branding-->
                 </header><!--//header-->
 
@@ -125,19 +147,16 @@
 </section><!--//feature-video-->
 
 
-<!-- ******FOOTER****** --> 
-   <!-- ******FOOTER****** --> 
-                            <footer class="footer">
-                                <div class="footer-main container">
-                                    <div class="row">
-                                        <div class="footer-col business-hours-col col-md-4 col-sm-6 col-xs-12">
-                                            <h3 class="col-title">Horario de Atención</h3>
-                                            <div class="intro">Nuestros Horarios de oficina y de<br>respuesta inmediata.</div>
-                                            <ul class="business-hours-list list-unstyled">
-                                                <li><strong>Lunes - Viernes:</strong> 8am - 6pm</li>
-                                                <li><strong>Sabado:</strong> 8am - 4pm</li>
-                                                <li><strong>Domingo:</strong> 9am - 1pm</li>
-                                            </ul>
+  <!-- ******FOOTER****** --> 
+                        <footer class="footer">
+                            <div class="footer-main container">
+                                <div class="row">
+                                    <div class="footer-col business-hours-col col-md-4 col-sm-6 col-xs-12">
+                                        <h3 class="col-title">Horario de Atención</h3>
+                                        <div class="intro">Nuestros Horarios de oficina y de<br>respuesta inmediata.</div>
+                                        <ul class="business-hours-list list-unstyled">
+                                            <li><strong>Lunes - Viernes:</strong> 7:30am - 5:30pm</li>
+                                            <li><strong>Sabado:</strong> 7:30am - 12pm</li>                                           </ul>
                                         </div><!--//footer-col-->
                                         <div class="footer-col contact-us-col col-md-4 col-sm-6 col-xs-12">
                                             <h3 class="col-title">Información de Contacto</h3>
@@ -148,7 +167,8 @@
                                                 </li>
                                                 <li class="item">
                                                     <span class="custom-icon icon-mobile-phone"></span>
-                                                    <span class="info"><a href="#">320 6740586</a></span>
+                                                    <span class="info"><i class="icon-whatsapp"></i> <a href="#">3206740586 -
+3152532734</a></span>
                                                 </li>
                                                 <li class="item">
                                                     <span class="custom-icon icon-email"></span>
@@ -160,7 +180,7 @@
 
 
                                                         <span class="street-address"><b>Ubicación</b></span><br>
-                                                        <span class="region">Calle 24 N0. 14-06</span><br>
+                                                        <span class="region">Calle 24 N0. 14-06 - Piso 2</span><br>
                                                         <span class="postal-code">Jamundi 
                                                             Cali, Valle del Cauca   </span><br>
                                                             <span class="country-name">Colombia</span>
@@ -171,20 +191,16 @@
                                             </div><!--//footer-col-->
                                             <div class="footer-col follow-us-col col-md-4 col-xs-12">
                                                 <h3 class="col-title">Síguenos</h3>
-                                                <div class="intro">Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero.</div>
+                                                <div class="intro">Síguenos en nuestras redes y entérate de nuestro excelente trabajo.</div>
                                                 <div class="social-container">
                                                     <ul class="list-inline social-list">
                                                         <li class="social-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                                        <li class="social-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                                        <li class="social-item"><a href="#"><i class="fa fa-linkedin"></i></a></li>
                                                         <li class="social-item"><a href="#"><i class="fa fa-instagram"></i></a></li>
                                                         <li class="social-item"><a href="#"><i class="fa fa-google-plus"></i></a></li>
                                                     </ul><!--//social-list-->
                                                 </div><!--//social-container-->
 
-                                                <ul class="footer-menu list-unstyled">
-                                                    <li><a href="#">Terms &amp; Conditions</a></li>
-                                                    <li><a href="#">Privacy Policy</a></li>
-                                                </ul>
                                             </div><!--//footer-col-->
                                         </div><!--//row-->
 
@@ -198,7 +214,6 @@
 
                                     </div><!--//bottombar--> 
                                 </footer><!--//footer-->
-
 
 
 <!-- Javascript -->          

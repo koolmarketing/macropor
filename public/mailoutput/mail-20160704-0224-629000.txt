@@ -1,0 +1,15 @@
+To: camoranns@gmail.com
+Subject: Contacto sitio web
+From: icoporcali@gmail.com
+Content-type: text/html; charset=UTF-8
+X-Mailer: PHP/5.6.15
+
+<h3Una persona nos ha contactado</h3>
+		<p><b>Nombre: </b>                Carlos</p>	  
+		<p><b>Email:</b>                       carlos.moran@plataforma.com.co </p>
+		<p><b>Teléfono:</b>               3008282305</p>		
+		<p><b>Ciudad: </b>                      Cali </p>
+		<p><b>Mensaje:  </b>                     Hooola</p>
+		
+		<p></p>
+		

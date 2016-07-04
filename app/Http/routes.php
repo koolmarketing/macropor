@@ -16,21 +16,28 @@ Route::get('/', function () {
 });
 
 
-
-Route::get('icopor', [
+Route::get('ingenieria_civil', [
 	'middleware' => 'web',
-	'as'   => 'icopor', 
-	'uses' => 'PaginasController@VerIcopor'
+	'as'   => 'ingenieria_civil', 
+	'uses' => 'PaginasController@VerIngenieriaCivil'
 	]);
 
-Route::get('bovedillas_casetones', [
+
+Route::get('aligeramientos', [
 	'middleware' => 'web',
-	'as'   => 'icopor', 
-	'uses' => 'PaginasController@VerBovedillasCasetones'
+	'as'   => 'aligeramientos', 
+	'uses' => 'PaginasController@VerAligeramientos'
 	]);
 
-Route::get('asesoria_soporte', [
+
+Route::get('otras_aplicaciones', [
 	'middleware' => 'web',
-	'as'   => 'icopor', 
-	'uses' => 'PaginasController@AsesoriaSoporte'
+	'as'   => 'otras_aplicaciones', 
+	'uses' => 'PaginasController@VerOtrasAplicaciones'
+	]);
+
+Route::post('enviarmail', [
+	'middleware' => 'web',
+	'as'   => 'send.mail', 
+	'uses' => 'PaginasController@EnviarMail'
 	]);

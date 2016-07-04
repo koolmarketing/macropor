@@ -34,7 +34,8 @@
 
     <link rel="shortcut icon" href="favicon.ico">  
     <link href='https://fonts.googleapis.com/css?family=Lato:400,400italic,700,900,900italic,700italic' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">     
+    {{-- <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">      --}}
+
     <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/plugins/custom-icons/style.css">
     <link rel="stylesheet" href="assets/plugins/animate-css/animate.min.css">
@@ -43,7 +44,8 @@
     <link rel="stylesheet" href="assets/plugins/owl-carousel/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="assets/plugins/Gallery/css/blueimp-gallery.min.css">
     <link rel="stylesheet" href="assets/plugins/Bootstrap-Image-Gallery/css/bootstrap-image-gallery.min.css">
-
+    <link rel="stylesheet" href="bower_components/sweetalert/dist/sweetalert.css">
+<link rel="stylesheet" href="assets/css/bootstrap_2.css">
     
     <!-- Theme CSS -->
     <link rel="stylesheet" href="assets/css/styles.css">
@@ -57,23 +59,31 @@
           (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
               (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
               m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-          })(window,document,'script','../../../www.google-analytics.com/analytics.js','ga');
+          })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-          ga('create', 'UA-24707561-36', 'auto');
+          ga('create', 'UA-80040237-1', 'auto');
           ga('send', 'pageview');
 
       </script>
 
       <!-- Facebook Pixel Code -->
-      <script>
-        !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-            n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
-            n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
-            t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
-                document,'script','../../../connect.facebook.net/en_US/fbevents.js');
+         <script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '299795150354648',
+      xfbml      : true,
+      version    : 'v2.6'
+    });
+  };
 
-            fbq('init', '1506230579705064');
-            fbq('track', "PageView");</script>
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
             <noscript><img height="1" width="1" style="display:none"
                 src="https://www.facebook.com/tr?id=1506230579705064&amp;ev=PageView&amp;noscript=1"
                 /></noscript>
@@ -86,7 +96,7 @@
                 @include('templates.header')
 
                 <div id="promo" class="promo-section">
- 
+
                     <div id="hero-carousel" class="hero-carousel carousel carousel-fade slide" data-ride="carousel" data-interval="8000">
 
                         <!-- Indicators -->
@@ -105,13 +115,13 @@
                                 <div class="item-content container text-center">
                                     <div class="item-content-inner">
 
-                                        <h2 class="heading">Innovamos con Tecnología y Calidad
-                                            <br>Para Nuestros Clientes</h2>
-                                            <p class="intro">
-                                                Nuestro mayor interés es comprometernos <br>entregando calidad y buen servicio.
-                                            </p>
+                                       
+                                            <br><br>
                                             
-                                            <a class="btn btn-primary btn-cta scrollto" href="#about" target="_blank">Conózcanos</a>
+                                            <a class="btn btn-primary btn-cta scrollto" href="#about" target="_blank">Conózcanos</a><br><br>
+
+                                             <h2 class="heading" style="color:#E4A01B">Innovando con Tecnología y Calidad
+                                            <br>Para Nuestros Clientes</h2>
 
                                         </div><!--//item-content-inner-->
                                     </div><!--//item-content-->
@@ -121,9 +131,9 @@
                                     <div class="item-content container text-center">
                                         <div class="item-content-inner">
 
-                                            <h2 class="heading">Nuestro equipo está muy atento a colaborar activamente en sus requerimientos.</h2>
-                                            <p class="intro">Contamos con un equipo muy profesional para atender <br>todas las inquietudes que usted pueda tener.</p>
-                                            <a class="btn btn-primary btn-cta scrollto" href="#contact" target="_blank">Contáctenos</a>
+                                           {{--  <h2 class="heading">Nuestro equipo está muy atento a colaborar activamente en sus requerimientos.</h2>
+                                            <br><br>
+                                            <a class="btn btn-primary btn-cta scrollto" href="#contact" target="_blank">Contáctenos</a> --}}
 
                                         </div><!--//item-content-inner-->
                                     </div>
@@ -137,104 +147,96 @@
 
                     <section id="services" class="section services-section text-center">
                         <div class="container">
-                            <h2 class="section-title">Macropor Induyorjac S.A.S</h2>
-                            <div class="section-intro">Contamos con productos de altísima calidad que harán que los desarrollos de sus proyectos cuenten con un punto más alto de tecnología. </div>
+                            <h2 class="section-title text-withe">Macropor Induyorjac S.A.S</h2>
+                            <h3 class="section-intro text-withe">Contamos con productos de  calidad para sus proyectos </h3>
                             <div class="services-list row">
-                                <div class="item col-md-4 col-sm-6 col-xs-12">
+
+                                {{-- <div class="item col-md-4 col-sm-6 col-xs-12">
                                     <div class="item-inner">
                                         <span class="custom-icon icon-wheel_barrow"></span>
                                         <h3 class="item-title">Plastering</h3>
                                         <div class="item-desc">
                                             <p>There are 50+ construction icon fonts included in this template. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
-                                        </div><!--//item-desc-->
-                                    </div><!--//item-inner-->
-                                </div><!--//item-->
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="item col-md-4 col-sm-6 col-xs-12">
                                     <div class="item-inner">
                                         <span class="custom-icon icon-paint_brush"></span>
                                         <h3 class="item-title">Painting &amp; Decorating</h3>
                                         <div class="item-desc">
                                             <p>There are 50+ construction icon fonts included in this template. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
-                                        </div><!--//item-desc-->
-                                    </div><!--//item-inner-->
-                                </div><!--//item-->
-                                <div class="item col-md-4 col-sm-6 col-xs-12">
+                                        </div>
+                                    </div>
+                                </div>
+                             <div class="item col-md-4 col-sm-6 col-xs-12">
                                     <div class="item-inner">
                                         <span class="custom-icon icon-paint_roller"></span>
                                         <h3 class="item-title">Renovation &amp; Refurb</h3>
                                         <div class="item-desc">
                                             <p>There are 50+ construction icon fonts included in this template. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
-                                        </div><!--//item-desc-->
-                                    </div><!--//item-inner-->
-                                </div><!--//item-->
-                               
+                                        </div>
+                                    </div>
+                                </div> --}}
 
-                            <div class="cta-area">
-                                <ul class="list-inline">
-                                    <li><a class="btn btn-primary scrollto" href="#contact">Contáctenos</a></li>
-                                    <li><a class="btn btn-secondary scrollto" href="#projects">Nuestros Productos</a></li>
-                                </ul>
-                            </div><!--//cta-area-->
-                        </div><!--//container-->
-                    </section><!--//services-->
-
-
-                    <section id="about" class="about-section section text-center">
-                        <div class="container">
-                            <h2 class="section-title">Nosotros</h2>
-                            <div class="section-intro">
-                                <p>La empresa se constituyó por escritura pública en el año 2003 con razón social INDUSTRIA
-                                    METALMECANICA YORJAC LTDA, su objeto social inicial fue la fabricación y mantenimiento de
-                                    maquinaria industrial. La empresa toma la decisión de instalar una planta de transformación de
-                                    poliestireno expandible autoextinguible (icopor) modificando la razón social a MACROPOR
-                                    INDUYORJAC SAS.
-                                    Hoy por hoy contamos con el apoyo y la confianza de nuestros clientes quienes nos han
-                                    permitido hacer parte de sus proyectos basados en la experiencia, calidad y cumplimiento que
-                                    nos han caracterizado. 
-                                </div><!--//about-desc-->
-                                <figure class="about-figure">
-                                    <img class="img-responsive center-block img-thumbnail" src="assets/images/equipo.jpg" alt="">
-                                    <br>
-                                </figure>
-
-                                <div class="col-md-6">
-                                    <h4 class="section-title">Misión</h4>
-                                    <p>Fabricar y comercializar  productos en E.P.S(Icopor).
-                                        Satisfacer las necesidades y requerimientos de nuestros clientes de manera oportuna, permanente, con productos de calidad y precios competitivos.
-                                        Conservar los recursos naturales que se puedan ver afectados por el mal manejo de los residuos sólidos en especial  el poliestireno, desarrollando así un programa de manejo seguro y disposición final adecuado, que incluye la reutilización y reciclaje de este material. 
-                                    </p>
-                                </div> 
-                                <div class="col-md-6">
-                                    <h4 class="section-title">Visión</h4>
-                                    <p>Ser la compañía elegida para proveer productos en poliestireno expandible a nivel nacional, con base en la calidad de nuestros productos, el  cumplimiento y asesoría técnica,  el profesionalismo y calidad humana de nuestros colaboradores y la organización reflejada en nuestros procesos.</p>
-                                </div> 
+                              
                             </div><!--//container-->
-                        </section><!--//about-section-->
+                        </section><!--//services-->
 
-                        <section id="why" class="why-section section text-center">
-                            <h2 class="section-title">¿Por qué elegirnos?</h2>
-                            <div class="reasons center-block">
-                                <div class="item">
-                                    <h3 class="item-title"><i class="fa fa-check" aria-hidden="true"></i> Somos pioneros en el diseño de soluciones de icopor en la region</h3>
-                                   
-                                </div><!--//item-->
-                                <div class="item">
-                                    <h3 class="item-title"><i class="fa fa-check" aria-hidden="true"></i> Tenemos un 96% de satisfacción de todos nuestros clientes.</h3>
-                                    
-                                </div><!--//item-->
-                                <div class="item">
-                                    <h3 class="item-title"><i class="fa fa-check" aria-hidden="true"></i> Nuestro principal valor es la Responsabilidad</h3>
-                                    
-                                </div><!--//item-->
-                                <div class="item">
-                                    <h3 class="item-title"><i class="fa fa-check" aria-hidden="true"></i> Garantizamos la calidad de nuestros productos de principio a fin</h3>
-                                    
-                                </div><!--//item-->
-                                <div class="item">
-                                    <h3 class="item-title"><i class="fa fa-check" aria-hidden="true"></i> Prestamos acompañamiento de soporte y asesoría integral</h3>
-                                    <!--//item-desc-->
-                                </div><!--//item-->
-                            </div><!--//reasons-->
+
+                        <section id="about" class="about-section section text-center">
+                            <div class="container">
+                                <h2 class="section-title">Nosotros</h2>
+                                <div class="section-intro">
+                                    <p class="text-justify">La empresa se constituyó por escritura pública en el año 2003 con razón social INDUSTRIA
+                                        METALMECANICA YORJAC LTDA, su objeto social inicial fue la fabricación y mantenimiento de
+                                        maquinaria industrial. Se toma la decisión de instalar una planta de transformación de
+                                        poliestireno expandible  (icopor) modificando la razón social a MACROPOR
+                                        INDUYORJAC SAS.
+                                        Hoy por hoy contamos con el apoyo y la confianza de nuestros clientes quienes nos han
+                                        permitido hacer parte de sus proyectos basados en la experiencia, calidad y cumplimiento que
+                                        nos han caracterizado. 
+                                    </div><!--//about-desc-->
+                                   {{--  <figure class="about-figure">
+                                        <img class="img-responsive center-block img-thumbnail" src="assets/images/equipo.jpg" alt="">
+                                        <br>
+                                    </figure> --}}
+
+                                    <div class="col-md-6">
+                                        <h4 class="section-title">Misión</h4>
+                                        <p class="text-justify">Fabricar y comercializar  productos en E.P.S(Icopor).
+                                            Satisfacer las necesidades y requerimientos de nuestros clientes de manera oportuna, permanente, con productos de calidad y precios competitivos.
+                                            Conservar los recursos naturales que se puedan ver afectados por el mal manejo de los residuos sólidos en especial  el poliestireno, desarrollando así un programa de manejo seguro y disposición final adecuado, que incluye la reutilización y reciclaje de este material. 
+                                        </p>
+                                    </div> 
+                                    <div class="col-md-6">
+                                        <h4 class="section-title">Visión</h4>
+                                        <p class="text-justify">Ser la compañía elegida para proveer productos en poliestireno expandible a nivel nacional, con base en la calidad de nuestros productos, el  cumplimiento y asesoría técnica,  el profesionalismo y calidad humana de nuestros colaboradores y la organización reflejada en nuestros procesos.</p>
+                                    </div> 
+                                </div><!--//container-->
+                            </section><!--//about-section-->
+
+                            <section id="why" class="why-section section text-center">
+                                <h2 class="section-title">¿Por qué elegirnos?</h2>
+                                <div class="reasons center-block">
+
+                                    <div class="item">
+                                        <h3 class="item-title"><i class="fa fa-check" aria-hidden="true"></i> Satisfacción de nuestros clientes</h3>
+
+                                    </div><!--//item-->
+                                    <div class="item">
+                                        <h3 class="item-title"><i class="fa fa-check" aria-hidden="true"></i> Responsabilidad, Servicio y Cumplimiento</h3>
+
+                                    </div><!--//item-->
+                                    <div class="item">
+                                        <h3 class="item-title"><i class="fa fa-check" aria-hidden="true"></i> Calidad de nuestros productos</h3>
+
+                                    </div><!--//item-->
+                                    <div class="item">
+                                        <h3 class="item-title"><i class="fa fa-check" aria-hidden="true"></i> Acompañamiento y Asesoria técnica</h3>
+                                        <!--//item-desc-->
+                                    </div><!--//item-->
+                                </div><!--//reasons-->
 
                          {{--    <div class="badges container">
                                 <ul class="badges-list list-inline center-block">
@@ -251,12 +253,70 @@
 
                         <section id="projects" class="projects-section section text-center">
                             <div class="container">
-                                <h2 class="section-title">Lo Que Nosotros Hacemos</h2>
-                                <div class="section-intro">Innovamos con tecnología y calidad para nuestros clientes.</div>
+                                <h2 class="section-title">Nuestros Productos y Servicios</h2>
+                                <div class="section-intro"><h4>Innovamos con tecnología y calidad para nuestros clientes.</h4></div>
                                 <div class="latest-projects">
                                     {{-- <h3 class="sub-title">Latest Case Studies</h3> --}}
                                     <div class="row">
-                                        <div class="item col-sm-6 col-xs-12">
+
+<div class="col-md-4 col-sm-12 col-xs-12">
+              <div class="thumbnail thumb-shadow">
+                {{-- <img src="http://static.livedemo00.template-help.com/wt_54725/images/page-1_img1.jpg" alt=""> --}}
+                <img src="assets/images/portada_icopor.jpg" alt="">
+                <div class="caption bg2">
+                  <h3>
+                     ING. CIVIL
+                  </h3>
+                  <div class="wrap">
+                   {{--  <p>
+                      Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod.
+                    </p> --}}
+                    <a href="{!! URL::to('/') !!}/ingenieria_civil" class="btn-link fa-angle-right"></a>
+                  </div>  
+                </div>
+              </div>              
+            </div>
+
+            <div class="col-md-4 col-sm-12 col-xs-12">
+              <div class="thumbnail thumb-shadow">
+                {{-- <img src="http://static.livedemo00.template-help.com/wt_54725/images/page-1_img1.jpg" alt=""> --}}
+                <img src="assets/images/portada_icopor.jpg" alt="">
+                <div class="caption bg2">
+                  <h3>
+                     ALIGERAMIENTOS
+                  </h3>
+                  <div class="wrap">
+                   {{--  <p>
+                      Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod.
+                    </p> --}}
+                    <a href="{!! URL::to('/') !!}/aligeramientos" class="btn-link fa-angle-right"></a>
+                  </div>  
+                </div>
+              </div>              
+            </div>
+
+            <div class="col-md-4 col-sm-12 col-xs-12">
+              <div class="thumbnail thumb-shadow">
+                {{-- <img src="http://static.livedemo00.template-help.com/wt_54725/images/page-1_img1.jpg" alt=""> --}}
+                <img src="assets/images/portada_icopor.jpg" alt="">
+                <div class="caption bg2">
+                  <h3>
+                     OTRAS APLICACIONES
+                  </h3>
+                  <div class="wrap">
+                   {{--  <p>
+                      Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod.
+                    </p> --}}
+                    <a href="{!! URL::to('/') !!}/otras_aplicaciones" class="btn-link fa-angle-right"></a>
+                  </div>  
+                </div>
+              </div>              
+            </div>
+
+   
+
+
+                                       {{--  <div class="item col-sm-6 col-xs-12">
                                             <div class="item-inner">
                                                 <div class="project-item">
                                                     <div class="img-holder img-holder-1"></div>
@@ -284,7 +344,7 @@
                                                     </div><!--//info-mask-->
                                                 </div><!--//project-item-->
                                             </div><!--//item-inner-->
-                                        </div><!--//item-->
+                                        </div><!--//item--> --}}
 
 
                               {{--           <div class="item col-sm-4 col-xs-12">
@@ -305,38 +365,6 @@
                                     </div>
                                 </div>
 
-                                <div class="gallery">
-                                    <h3 class="sub-title">Galería de Imágenes</h3>
-                                    <div id="photos-wrapper" class="photos-wrapper row">
-                                        <div class="item col-md-2 col-sm-3 col-xs-4"><a href="assets/images/galeria/1.jpg" data-gallery><img class="img-responsive" src="assets/images/galeria/small/1.jpg" alt="" /></a></div>
-                                        <div class="item col-md-2 col-sm-3 col-xs-4"><a href="assets/images/galeria/2.jpg" data-gallery><img class="img-responsive" src="assets/images/galeria/small/2.jpg" alt="" /></a></div>
-                                        <div class="item col-md-2 col-sm-3 col-xs-4"><a href="assets/images/galeria/3.jpg" data-gallery><img class="img-responsive" src="assets/images/galeria/small/3.jpg" alt="" /></a></div>
-                                        
-                                        <div class="item col-md-2 col-sm-3 col-xs-4"><a href="assets/images/galeria/5.jpg" data-gallery><img class="img-responsive" src="assets/images/galeria/small/5.jpg" alt="" /></a></div>
-                                        <div class="item col-md-2 col-sm-3 col-xs-4"><a href="assets/images/galeria/6.jpg" data-gallery><img class="img-responsive" src="assets/images/galeria/small/6.jpg" alt="" /></a></div>
-                                        <div class="item col-md-2 col-sm-3 col-xs-4"><a href="assets/images/galeria/7.jpg" data-gallery><img class="img-responsive" src="assets/images/galeria/small/7.jpg" alt="" /></a></div>
-                                        <div class="item col-md-2 col-sm-3 col-xs-4"><a href="assets/images/galeria/8.jpg" data-gallery><img class="img-responsive" src="assets/images/galeria/small/8.jpg" alt="" /></a></div>
-                                        
-                                        <div class="item col-md-2 col-sm-3 col-xs-4"><a href="assets/images/galeria/10.jpg" data-gallery><img class="img-responsive" src="assets/images/galeria/small/10.jpg" alt="" /></a></div>
-                                        <div class="item col-md-2 col-sm-3 col-xs-4"><a href="assets/images/galeria/11.jpg" data-gallery><img class="img-responsive" src="assets/images/galeria/small/11.jpg" alt="" /></a></div>
-                                        <div class="item col-md-2 col-sm-3 col-xs-4"><a href="assets/images/galeria/12.jpg" data-gallery><img class="img-responsive" src="assets/images/galeria/small/12.jpg" alt="" /></a></div>
-                                        
-                                        <div class="item col-md-2 col-sm-3 col-xs-4"><a href="assets/images/galeria/14.jpg" data-gallery><img class="img-responsive" src="assets/images/galeria/small/14.jpg" alt="" /></a></div>
-                                        <div class="item col-md-2 col-sm-3 col-xs-4"><a href="assets/images/galeria/15.jpg"data-gallery><img class="img-responsive" src="assets/images/galeria/small/15.jpg" alt="" /></a></div>
-                                        <div class="item col-md-2 col-sm-3 col-xs-4"><a href="assets/images/galeria/16.jpg" data-gallery><img class="img-responsive" src="assets/images/galeria/small/16.jpg" alt="" /></a></div>
-                                       
-                                        <div class="item col-md-2 col-sm-3 col-xs-4"><a href="assets/images/galeria/18.jpg" data-gallery><img class="img-responsive" src="assets/images/galeria/small/18.jpg" alt="" /></a></div>
-                                        <div class="item col-md-2 col-sm-3 col-xs-4"><a href="assets/images/galeria/19.jpg" data-gallery><img class="img-responsive" src="assets/images/galeria/small/19.jpg" alt="" /></a></div>
-                                        <div class="item col-md-2 col-sm-3 col-xs-4"><a href="assets/images/galeria/20.jpg" data-gallery><img class="img-responsive" src="assets/images/galeria/small/20.jpg" alt="" /></a></div>
-                                        <div class="item col-md-2 col-sm-3 col-xs-4"><a href="assets/images/galeria/21.jpg" data-gallery><img class="img-responsive" src="assets/images/galeria/small/21.jpg" alt="" /></a></div>
-                                        <div class="item col-md-2 col-sm-3 col-xs-4"><a href="assets/images/galeria/22.jpg" data-gallery><img class="img-responsive" src="assets/images/galeria/small/22.jpg" alt="" /></a></div>
-                                        <div class="item col-md-2 col-sm-3 col-xs-4"><a href="assets/images/galeria/23.jpg" data-gallery><img class="img-responsive" src="assets/images/galeria/small/23.jpg" alt="" /></a></div>
-                                        <div class="item col-md-2 col-sm-3 col-xs-4"><a href="assets/images/galeria/24.jpg" data-gallery><img class="img-responsive" src="assets/images/galeria/small/24.jpg" alt="" /></a></div>
-                                        <div class="item col-md-2 col-sm-3 col-xs-4"><a href="assets/images/galeria/4.jpg" data-gallery><img class="img-responsive" src="assets/images/galeria/small/4.jpg" alt="" /></a></div>
-                                         <div class="item col-md-2 col-sm-3 col-xs-4"><a href="assets/images/galeria/17.jpg" data-gallery><img class="img-responsive" src="assets/images/galeria/small/17.jpg" alt="" /></a></div>
-
-                                    </div><!--//photos-wrapper-->
-                                </div><!--//gallery-->
                             </div><!--//container-->
                         </section><!--//section-->
 
@@ -348,55 +376,57 @@
 
                         <section id="contact" class="contact-section text-center">
                             <div class="container">
-                                <h2 class="section-title">Contáctenos</h2>
+                                <h2 class="section-title">CONTÁCTENOS</h2>
                                 <div class="contact-intro">
-                                    <p>Le invitamos a que si presenta cualquier inquietud no dude en comunicarse con nosotros, tenemos distintos medios de comunicación.</p>
+                                    <h5 style="color:#ffffff">CUALQUIER INQUIETUD NO DUDE EN COMUNICARSE CON NOSOTROS</h5>
                                 </div>
                                 <ul class="contact-info-list list-inline">
                                     <li class="item">
                                         <span class="custom-icon icon-telephone_signal"></span>
-                                        <span class="info"><a href="#">269 4134</a></span>
+                                        <span class="info"><a href="#">269 4134 - 320 6740586</a></span>
                                     </li>
                                     <li class="item">
                                         <span class="custom-icon icon-email"></span>
                                         <span class="info"><a href="#">info@macropor.com</a></span>
                                     </li>    
                                 </ul>
-                                <form id="contact-form" class="contact-form form" method="post" action="http://themes.3rdwavemedia.com/trades/1.0.1/mailer.php">
+                                <form id="form_enviar_mensaje" class="contact-form form" method="post" action="{!! URL::to('/') !!}/enviarmail">
+                                {!!Form::open(array('action' => 'PaginasController@EnviarMail', 'method' => 'post', 'id' => 'form_enviar_mensaje','files'=>true));!!}
+                                
                                     <div id="form-messages" class="text-center"></div> 
                                     <div class="row text-left">
                                         <div class="name-group col-sm-6 col-xs-12 form-group">
                                             <div class="form-group-inner">
                                                 <label for="cname">Nombre</label>
-                                                <input type="text" class="form-control" id="cname" name="name" placeholder="Su Nombre" minlength="2"  aria-required="true" required>
+                                                <input type="text" class="form-control" id="name" name="name" placeholder="Su Nombre" minlength="2"  aria-required="true" required>
                                             </div>
                                         </div><!--//name-group-->
                                         <div class="email-group col-sm-6 col-xs-12 form-group">
                                             <div class="form-group-inner">
                                                 <label for="cemail">Email</label>
-                                                <input type="email" class="form-control" id="cemail" name="email" placeholder="Su Correo" aria-required="true" required>
+                                                <input type="email" class="form-control" id="email" name="email" placeholder="Su Correo" aria-required="true" required>
                                             </div>
                                         </div><!--//email-group-->
                                         <div class="phone-group col-sm-6 col-xs-12 form-group">
                                             <div class="form-group-inner">
                                                 <label for="cphone">Teléfono</label>
-                                                <input type="tel" class="form-control" id="cphone" name="phone" placeholder="Teléfono" aria-required="true" required>
+                                                <input type="tel" class="form-control" id="phone" name="phone" placeholder="Teléfono" aria-required="true" required>
                                             </div>
                                         </div><!--//phone-group-->
                                         <div class="zipcode-group col-sm-6 col-xs-12 form-group">
                                             <div class="form-group-inner">
                                                 <label for="czipcode">Ciudad</label>
-                                                <input type="text" class="form-control" id="czipcode" name="zipcode" placeholder="Ciudad" aria-required="true" required>
+                                                <input type="text" class="form-control" id="city" name="city" placeholder="Ciudad" aria-required="true" required>
                                             </div>
                                         </div><!--//zipcode-group-->
                                         <div class="message-group col-xs-12 form-group">
                                             <div class="form-group-inner">
                                                 <label for="cmessage">Su mensaje</label>
-                                                <textarea class="form-control" id="cmessage" name="message" rows="6" placeholder="Mensaje"  required></textarea>
+                                                <textarea class="form-control" id="message" name="message" rows="6" placeholder="Mensaje"  required></textarea>
                                             </div>
                                         </div><!--//message-group-->
                                         <div class="col-xs-12 form-group">
-                                            <button type="submit" class="btn btn-block btn-primary btn-cta">Enviar</button>
+                                            <button id="btn-enviar-mensaje" type="button" class="btn btn-block btn-primary btn-cta">Enviar</button>
                                         </div> 
                                     </div><!--//row-->
                                 </form><!--//contact-form-->
@@ -411,8 +441,8 @@
                                         <h3 class="col-title">Horario de Atención</h3>
                                         <div class="intro">Nuestros Horarios de oficina y de<br>respuesta inmediata.</div>
                                         <ul class="business-hours-list list-unstyled">
-                                            <li><strong>Lunes - Viernes:</strong> 8am - 6pm</li>
-                                            <li><strong>Sabado:</strong> 8am - 4pm</li>                                           </ul>
+                                            <li><strong>Lunes - Viernes:</strong> 7:30am - 5:30pm</li>
+                                            <li><strong>Sabado:</strong> 7:30am - 12pm</li>                                           </ul>
                                         </div><!--//footer-col-->
                                         <div class="footer-col contact-us-col col-md-4 col-sm-6 col-xs-12">
                                             <h3 class="col-title">Información de Contacto</h3>
@@ -423,7 +453,8 @@
                                                 </li>
                                                 <li class="item">
                                                     <span class="custom-icon icon-mobile-phone"></span>
-                                                    <span class="info"><a href="#">320 6740586</a></span>
+                                                    <span class="info"><i class="icon-whatsapp"></i> <a href="#">3206740586 -
+3152532734</a></span>
                                                 </li>
                                                 <li class="item">
                                                     <span class="custom-icon icon-email"></span>
@@ -435,7 +466,7 @@
 
 
                                                         <span class="street-address"><b>Ubicación</b></span><br>
-                                                        <span class="region">Calle 24 N0. 14-06</span><br>
+                                                        <span class="region">Calle 24 N0. 14-06 - Piso 2</span><br>
                                                         <span class="postal-code">Jamundi 
                                                             Cali, Valle del Cauca   </span><br>
                                                             <span class="country-name">Colombia</span>
@@ -509,8 +540,10 @@
                                     </div>
                                 </div><!--blueimp-gallery-->                                
 
+
+
                                 <!-- Main Javascript -->          
-                                <script type="text/javascript" src="assets/plugins/jquery-1.12.3.min.js"></script>
+                                <script type="text/javascript" src="assets/js/jquery.min.js"></script>
                                 <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
                                 <script type="text/javascript" src="assets/plugins/jquery-scrollTo/jquery.scrollTo.min.js"></script>  
                                 <script type="text/javascript" src="assets/plugins/jquery-match-height/jquery.matchHeight-min.js"></script>
@@ -524,9 +557,10 @@
                                 <script type="text/javascript" src="assets/js/ajax-form.js"></script> 
                                 <script type="text/javascript" src="assets/js/main.js"></script> 
                                 <!--[if !IE]>-->
-                                <script type="text/javascript" src="assets/js/animations.js"></script>                             <!--<![endif]--> 
-                                <!-- Style Switcher (REMOVE ON YOUR PRODUCTION SITE) -->
+                                <script type="text/javascript" src="assets/js/animations.js"></script>                          
                                 <script src="assets/js/demo/style-switcher.js"></script>
+<script src="bower_components/sweetalert/dist/sweetalert.min.js"></script>
+                                <script type="text/javascript" src="assets/js/main.js"></script>
                             </body>
 
 

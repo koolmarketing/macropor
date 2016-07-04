@@ -45,6 +45,7 @@
     <link rel="stylesheet" href="assets/plugins/owl-carousel/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="assets/plugins/Gallery/css/blueimp-gallery.min.css">
     <link rel="stylesheet" href="assets/plugins/Bootstrap-Image-Gallery/css/bootstrap-image-gallery.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap_2.css">
 
     
     <!-- Theme CSS -->
@@ -92,17 +93,17 @@
                 <section id="services" class="section services-section text-center">
                     <div class="container">
 
-                       @yield('contenido')
+                     @yield('contenido')
 
-                   </div><!--//container-->
-               </section><!--//services-->                     
-
-
+                 </div><!--//container-->
+             </section><!--//services-->                     
 
 
 
-               <!-- ******FOOTER****** --> 
-               <footer class="footer">
+
+
+             <!-- ******FOOTER****** --> 
+             <footer class="footer">
                 <div class="footer-main container">
                     <div class="row">
                         <div class="footer-col business-hours-col col-md-4 col-sm-6 col-xs-12">
@@ -165,7 +166,7 @@
                     <div class="bottombar text-center">
 
 
-                    <div class="copyright"><b>MACROPOR</b> Induyorjac S.A.S  - Todos los derechos reservados</div>  
+                        <div class="copyright"><b>MACROPOR</b> Induyorjac S.A.S  - Todos los derechos reservados</div>  
 
                     </div><!--//bottombar--> 
                 </footer><!--//footer-->
